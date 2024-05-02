@@ -4,6 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.cneko.ctlib.common.file.AssetsFile;
 import org.cneko.ctlib.common.file.Resources;
 import org.cneko.tonekoextend.events.NekoChatEvent;
+import org.cneko.tonekoextend.events.PlayerAttack;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -22,6 +23,7 @@ public final class ToNekoExtend extends JavaPlugin {
             this.getLogger().warning("Can not load resource:"+e.getMessage());
         }
         NekoChatEvent.init();
+        PlayerAttack.init();
     }
 
     @Override

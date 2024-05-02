@@ -7,12 +7,14 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
 import org.cneko.tonekoextend.api.PortBall;
+import org.cneko.tonekoextend.ToNekoExtend;
 
 import static org.cneko.tonekoextend.ToNekoExtend.getMessage;
+import static org.bukkit.Bukkit.getServer;
 
 public class PlayerAttack implements Listener {
     public static void init(){
-
+	getServer().getPluginManager().registerEvents(new PlayerAttack(), ToNekoExtend.instance);
     }
     @EventHandler
     public void onPlayerAttack(EntityDamageByEntityEvent event){
