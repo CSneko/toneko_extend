@@ -28,6 +28,8 @@ public class NekoChatEvent implements Listener {
         String name = player.getName();
         if(PortBall.getStatus(name)){
             event.setCancelled(true);
+        }else{
+            return;
         }
         //TODO 在toneko添加configAPI
         Plugin toneko = Bukkit.getPluginManager().getPlugin("toNeko");

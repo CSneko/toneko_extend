@@ -17,7 +17,7 @@ public final class ToNekoExtend extends JavaPlugin {
         instance = this;
         try {
             Resources resources = new Resources(this.getClass());
-            lang = new AssetsFile(resources,"lang.yml").getLanguageAssets();
+            lang = new AssetsFile(resources,"toneko_extend").getLanguageAssets();
             lang.setDefaultLanguage("zh_cn");
         } catch (URISyntaxException | IOException e) {
             this.getLogger().warning("Can not load resource:"+e.getMessage());
