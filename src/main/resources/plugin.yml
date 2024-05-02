@@ -1,0 +1,6 @@
+name: toneko_extend
+version: '${version}'
+main: org.cneko.tonekoextend.ToNekoExtend
+api-version: '1.20'
+authors: [CrystalNeko]
+softdepend: [toNeko]
